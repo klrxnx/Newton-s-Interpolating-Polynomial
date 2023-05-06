@@ -27,7 +27,7 @@ let pointsContainer = document.getElementById("pointsContainer");
 for (let i = 0; i < points.length; i++) {
   let pointDiv = document.createElement("div");
   pointDiv.innerHTML = `
-  (${points[i][0]}, ${points[i][1].toFixed(2)})
+  (${points[i][0]}, ${points[i][1]})
   `;
   pointsContainer.appendChild(pointDiv);
 }
@@ -61,7 +61,7 @@ function calculate() {
   }
 
   // Display the result
-  document.getElementById("result").innerHTML = "P(" + xValue + ") = " + p.toFixed(2);
+  document.getElementById("result").innerHTML = "P(" + xValue + ") = " + p;
   //displaying the Polynomial
   displayPolynomial(xArr, fArr);
 }
@@ -77,7 +77,7 @@ function displayPolynomial(xArr, fArr) {
     if (i < n-1) {
       term += " * ";
     }
-    let coefficient = fArr[i].toFixed(2);
+    let coefficient = fArr[i];
     polyStr += coefficient + term;
   }
   document.getElementById("polynomial").innerHTML = polyStr;
