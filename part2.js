@@ -71,3 +71,11 @@ function generateFields() {
     }
     document.getElementById("polynomial").innerHTML = polyStr;
   }
+
+  function clearFields(){
+    document.getElementById("polynomial").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("xValue").value = "";
+
+    generateFields();
+  }
