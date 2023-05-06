@@ -101,6 +101,11 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 /*--------------------------------------*/
+
+.margin{
+  margin-right: 50px;
+}
+
 a, 
 button {
   touch-action: manipulation;
