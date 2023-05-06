@@ -72,6 +72,7 @@ function generateFields() {
     document.getElementById("polynomial").innerHTML = polyStr;
   }
 
+//Clear Fields
   function clearFields(){
     document.getElementById("polynomial").innerHTML = "";
     document.getElementById("result").innerHTML = "";
